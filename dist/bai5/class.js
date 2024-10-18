@@ -1,0 +1,70 @@
+class Warehouse {
+    constructor(name, storage, address, owner) {
+        this._name = name;
+        this._storage = storage;
+        this._address = address;
+        this.owner = owner;
+    }
+    // Getter for name
+    get name() {
+        return this._name;
+    }
+    // Setter for name
+    set name(value) {
+        if (value.length > 0) {
+            this._name = value;
+        }
+        else {
+            console.log("Name cannot be empty");
+        }
+    }
+    // Getter for storage
+    get storage() {
+        return this._storage;
+    }
+    // Setter for storage
+    set storage(value) {
+        if (value.length > 0) {
+            this._storage = value;
+        }
+        else {
+            console.log("Storage cannot be empty");
+        }
+    }
+    // Getter for address
+    get address() {
+        return this._address;
+    }
+    // Setter for address
+    set address(value) {
+        if (value.length > 0) {
+            this._address = value;
+        }
+        else {
+            console.log("Address cannot be empty");
+        }
+    }
+    displayInfo() {
+        console.log(`Warehouse Information:
+      Name: ${this._name}
+      Storage: ${this._storage}
+      Address: ${this._address}
+      Owner: ${this.owner}`);
+    }
+}
+// Khởi tạo đối tượng thuộc lớp Warehouse
+const warehouse1 = new Warehouse("Main Warehouse", "5000m²", "123 Main St", "John Doe");
+// Truy xuất các thuộc tính
+console.log("Name:", warehouse1.name); // Output: Name: Main Warehouse
+console.log("Storage:", warehouse1.storage); // Output: Storage: 5000m²
+console.log("Address:", warehouse1.address, "\n"); // Output: Address: 123 Main St
+// Thay đổi các thuộc tính
+warehouse1.name = "Secondary Warehouse";
+warehouse1.storage = "3000m²";
+warehouse1.address = "456 Secondary St";
+// Truy xuất lại để kiểm tra thay đổi
+console.log("Updated Name:", warehouse1.name); // Output: Updated Name: Secondary Warehouse
+console.log("Updated Storage:", warehouse1.storage); // Output: Updated Storage: 3000m²
+console.log("Updated Address:", warehouse1.address, "\n"); // Output: Updated Address: 456 Secondary St
+warehouse1.displayInfo();
+//# sourceMappingURL=class.js.map
