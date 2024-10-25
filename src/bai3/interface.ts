@@ -1,4 +1,4 @@
-interface User {
+interface User3 {
   readonly id: number;
   name: string; // Tên của người dùng
   age: number; // Tuổi của người dùng
@@ -8,7 +8,7 @@ interface User {
   isActive?: boolean; // Thuộc tính tùy chọn, xác định người dùng có đang hoạt động hay không
   createdAt?: Date; // Ngày tạo (tùy chọn)
 }
-const user1: User = {
+const user3: User3 = {
   id: 1,
   name: "John Doe",
   age: 30,
@@ -18,14 +18,14 @@ const user1: User = {
   isActive: true,
   createdAt: new Date(),
 };
-console.log(user1);
+console.log(user3);
 
-interface User2 extends User {
+interface User2 extends User3 {
   role: string;
   pro: boolean;
 }
 
-const user2: User2 = {
+const user31: User2 = {
   id: 2,
   name: "John Doe",
   age: 30,
@@ -35,3 +35,4 @@ const user2: User2 = {
   role: "customer",
   pro: false,
 };
+console.log(user31);

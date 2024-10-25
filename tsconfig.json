@@ -7,7 +7,9 @@
     "rootDir": "./src", // Thư mục chứa các file TypeScript gốc
     "moduleResolution": "node", // Kiểu module resolution, dùng 'node' cho môi trường Node.js
     "skipLibCheck": true, // Bỏ qua kiểm tra kiểu cho các file định nghĩa thư viện .d.ts
-    "sourceMap": true // Tạo source map giúp debug dễ dàng hơn
+    "sourceMap": true, // Tạo source map giúp debug dễ dàng hơn
+    "experimentalDecorators": true, // Kích hoạt decorators (bắt buộc để dùng decorators)
+    "emitDecoratorMetadata": true // Tạo metadata cho decorators (hữu ích khi dùng với frameworks như Angular)
   },
   "lib": ["es2015"],
   "include": ["src/."], // Các file được bao gồm trong quá trình biên dịch

@@ -1,4 +1,4 @@
-const user1 = {
+const user3 = {
     id: 1,
     name: "John Doe",
     age: 30,
@@ -8,8 +8,8 @@ const user1 = {
     isActive: true,
     createdAt: new Date(),
 };
-console.log(user1);
-const user2 = {
+console.log(user3);
+const user31 = {
     id: 2,
     name: "John Doe",
     age: 30,
@@ -19,4 +19,5 @@ const user2 = {
     role: "customer",
     pro: false,
 };
+console.log(user31);
 //# sourceMappingURL=interface.js.map

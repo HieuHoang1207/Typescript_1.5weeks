@@ -1,0 +1,1 @@
+{"version":3,"file":"functionOverloading.js","sourceRoot":"","sources":["../../src/bai10/functionOverloading.ts"],"names":[],"mappings":"AAEA,SAAS,OAAO,CAAC,MAAW,EAAE,MAAW;IACvC,OAAO,MAAM,GAAG,MAAM,CAAC;AACzB,CAAC;AAED,gBAAgB;AAChB,IAAI,cAAc,GAAG,OAAO,CAAC,SAAS,EAAE,QAAQ,CAAC,CAAC,CAAC,wBAAwB;AAE3E,aAAa;AACb,IAAI,cAAc,GAAG,OAAO,CAAC,EAAE,EAAE,EAAE,CAAC,CAAC,CAAC,aAAa"}
